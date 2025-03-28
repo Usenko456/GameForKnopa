@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
-
-public class MassClass:MonoBehaviour
-    // Змінено ім'я класу на MassClass
+public class MassClass : MonoBehaviour
 {
-    public enum MassClassEnum // Перерахування залишилось MassClassEnum
+    public enum MassClassEnum
     {
         Asteroidan,
         Mercurian,
