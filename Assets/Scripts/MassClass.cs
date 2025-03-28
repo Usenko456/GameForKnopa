@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+
 public class MassClass : MonoBehaviour
 {
     public enum MassClassEnum

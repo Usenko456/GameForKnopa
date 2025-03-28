@@ -27,18 +27,18 @@ public class PlanetaryObject : MonoBehaviour, IPlanetaryObject
 
         spriteRenderer.sprite = CreateCircleSprite((float)mass);
 
-        float scaleFactor = Mathf.Clamp(Mathf.Pow((float)mass, 0.9f) / 5f * 4f, 0.4f, 80f); 
+        float scaleFactor = Mathf.Clamp(Mathf.Pow((float)mass, 0.9f) / 5f * 4f, 0.4f, 80f);
         transform.localScale = Vector3.one * scaleFactor;
 
         orbitLineRenderer = gameObject.AddComponent<LineRenderer>();
-        orbitLineRenderer.positionCount = 100; 
+        orbitLineRenderer.positionCount = 100;
         orbitLineRenderer.loop = true;
 
         orbitLineRenderer.startWidth = 0.1f;
         orbitLineRenderer.endWidth = 0.1f;
         orbitLineRenderer.material = new Material(Shader.Find("Sprites/Default"));
-        orbitLineRenderer.startColor = planetColor;  
-        orbitLineRenderer.endColor = planetColor;    
+        orbitLineRenderer.startColor = planetColor;
+        orbitLineRenderer.endColor = planetColor;
 
         DrawOrbit();
     }
@@ -82,8 +82,8 @@ public class PlanetaryObject : MonoBehaviour, IPlanetaryObject
         }
     }
     private Sprite CreateCircleSprite(float mass)
-    {    
-        int size = Mathf.CeilToInt(mass * 5); 
+    {
+        int size = Mathf.CeilToInt(mass * 5);
 
         Texture2D texture = new Texture2D(size, size);
         for (int x = 0; x < texture.width; x++)

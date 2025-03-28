@@ -10,7 +10,7 @@ public class PlanetaryFactory : MonoBehaviour
             Debug.LogError("System center is not assigned!");
             return planets;
         }
-        int planetCount = Random.Range(5, 15); 
+        int planetCount = Random.Range(5, 15);
         float baseOrbitRadius = 40f;
         float minOrbitSpacing = 10f;
         float currentOrbitRadius = baseOrbitRadius;

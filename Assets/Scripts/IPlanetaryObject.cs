@@ -1,4 +1,4 @@
-﻿using static MassClass; 
+﻿using static MassClass;
 public interface IPlanetaryObject
 {
     double Mass { get; }
